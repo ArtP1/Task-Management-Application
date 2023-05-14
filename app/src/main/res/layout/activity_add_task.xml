@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/background"
+    android:padding="16dp">
+
+    <TextView
+        android:text="Add Task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/editTextTaskTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Title"/>
+
+    <EditText
+        android:id="@+id/editTextTaskDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Description"/>
+
+    <EditText
+        android:id="@+id/editTextTaskPriority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Priority (1-10)"/>
+
+    <EditText
+        android:id="@+id/editTextTaskCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Category"/>
+
+    <EditText
+        android:id="@+id/editTextTaskDueDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Due Date"
+        android:inputType="none"
+        android:focusable="false"/>
+
+    <Button
+        android:id="@+id/buttonAddTask"
+        android:text="Add Task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <!--   Application Name   -->
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="TO-DO Lists"
+        android:textSize="35dp"
+        android:textStyle="bold"/>
+
+    <!--   Logo   -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:src="@drawable/baseline_format_list_bulleted_24"
+        android:layout_below="@+id/app_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+    <!--   Create an Account Section   -->
+    <LinearLayout
+        android:id="@+id/create_account_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/welcomeUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:layout_gravity="center_horizontal"/>
+
+        <!--   Create Account Button   -->
+        <Button
+            android:id="@+id/myTasksBtn"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:background="#FF4BB6E8"
+            android:padding="10dp"
+            android:text="My Tasks"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/addTaskBtn"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:background="#FF4BB6E8"
+            android:padding="10dp" android:text="Add Task"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/completedTasksBtn"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:background="#FF4BB6E8"
+            android:padding="10dp"
+            android:text="Completed"
+            android:textColor="@color/white"/>
+
+        <!--   Login Button   -->
+        <Button
+            android:id="@+id/profileBtn"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:text="Profile"
+            android:textColor="@color/white"
+            android:background="#FF4BB6E8"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/logOutBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:background="#FF4BB6E8"
+            android:padding="10dp"
+            android:text="Log Out"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+</RelativeLayout>

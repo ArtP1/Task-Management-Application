@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <!--   Application Name   -->
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="TaskMate"
+        android:textSize="35dp"
+        android:textStyle="bold"/>
+
+    <!--   Logo   -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:src="@drawable/baseline_format_list_bulleted_24"
+        android:layout_below="@+id/app_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"/>
+
+    <!--   Create an Account Section   -->
+    <LinearLayout
+        android:id="@+id/create_account_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <!--   Username   -->
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/baseline_person_24"
+            android:hint="Enter Username"
+            android:drawablePadding="8dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <!--   Password   -->
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:drawableLeft="@drawable/baseline_lock_24"
+            android:inputType="textPassword"
+            android:drawablePadding="8dp"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/forgotPassord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:layout_marginTop="60dp"
+            android:textStyle="italic"
+            android:layout_gravity="center_horizontal"/>
+
+        <!--   Login Button   -->
+        <Button
+            android:id="@+id/loginButtton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:background="@android:color/system_accent1_300"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+</RelativeLayout>

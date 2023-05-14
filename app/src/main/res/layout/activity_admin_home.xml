@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+
+    <!--   Logo   -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:src="@drawable/baseline_admin_panel_settings_24"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"/>
+
+    <!--   Create an Account Section   -->
+    <LinearLayout
+        android:id="@+id/create_account_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/forgotPassord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:layout_marginBottom="5dp"
+            android:text="Welcome Admin!"
+            android:textStyle="italic" />
+
+        <!--   Create Account Button   -->
+        <Button
+            android:id="@+id/users"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:background="#FF4BB6E8"
+            android:padding="10dp"
+            android:text="Users"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/tasks"
+            android:layout_width="113dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="25dp"
+            android:background="#FF4BB6E8"
+            android:padding="10dp"
+            android:text="Tasks"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</RelativeLayout>
